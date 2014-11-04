@@ -1,4 +1,3 @@
-from django.conf.urls.defaults import *
 from django.views.generic.base import TemplateView
 from django.shortcuts import render_to_response, get_object_or_404
 from .models import Blog_Rec
