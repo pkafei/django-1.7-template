@@ -6,13 +6,10 @@ from haystack.forms import ModelSearchForm
 from haystack.query import SearchQuerySet
 from haystack.views import SearchView, search_view_factory
 
-
 def index(request):
     return render_to_response('templates/index.html', {
         'recommendations': Blog_Rec.objects.all()[:5]
     })
-
-
 
 '''
 sqs = SearchQuerySet().filter(author='Portia')
